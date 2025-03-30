@@ -4,73 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Coach Website Template Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div><!-- це буде перший рядок -->
-            <p>About me</p> <!-- це буде ліва половина -->
-            <p>Chalenges</p>
-            <p>Testimonials</p>
-            <p>Programs</p>
-            <p>Events</p>
-            <p>News</p>
-
-            <p>Facebook</p><!-- це буде права половина (іконки соцмереж)-->
+        <section id="first-page"><!-- перша сторінка --><!-- тут треба посилання на картинку фона -->
+            <header><!-- це  перший рядок --><!-- В МАЙБУТНЬОМУ ЦЕ БУДУТЬ КНОПКИ НАВЫГАЦІЇ -->
+            <div id="header-left">  <!-- це  ліва половина --> 
+                <p><b>About me</b></p> 
+                <p><b>Chalenges</b></p>
+                <p><b>Testimonials</b></p>
+                <p><b>Programs</b></p>
+                <p><b>Events</b></p>
+                <p><b>News</b></p>         
+            </div>
+            <div id="header-right">  
+            <p>Facebook</p><!-- це  права половина (іконки соцмереж)--><!-- ДОДАТИ ПОСИЛАННЯ І ІКОНКИ-->
             <p>Youtube</p>
             <p>Instagram</p>
-        </div>
-    </header>
+            </div>
+            </header>        
+            <h1>Lead Like a Pro <br>With Logan Pierce </h1>  <!-- основний заголовок -->
+            <h3> Join thousands of leaders who have unlocked their true <br>potential and achieved remarkable success.</h3><!-- підзаголовок -->
+            <form action="https://"><!-- тут буде треба адреса -->
+                <input type="text" name="course" placeholder="Email*" required class="input"><!--type="text" - висвітлює вікно для вводу тексту; placeholder="довільний текст" - надпис у вікні вводу; required - означає необхідність; ВСЕ ЦЕ РАЗОМ - СКЛАДОВІ ВІКНА ВВОДУ--> 
+                <button type="submit" class="submit">Get my free course</button><!--<button type="submit">Submit</button>- висвітлює кнопку 'Відправити'-->          
+            </form>
+            <p id="form-first"><em><u>Sign up</u> now to receive your <strong> FREE</strong> mini-course on<strong> “Mastering Public Speaking”.</strong></em></p><!-- тут ще треба поділити по кольорам шрифту -->
+            <p id="link-program">Find the Right <a href="" class="link">Program</a> Now</p><!-- текст під кнопкою з посиланням -->
+        </section>
+          
     <main>
-        <section><!-- перша сторінка --><!-- тут треба посилання на картинку фона -->
-            <h1>Lead Like a Pro With Logan Pierce </h1> 
-            <h3> Join thousands of leaders who have unlocked their true potential and achieved remarkable success.</h3>
-            <p>Поле для вводу</p> <p>Кнопка</p>
-            <p>Sign up now to receive your FREE mini-course on “Mastering Public Speaking”.</p><!-- текст під кнопкою -->
-            <p>Find the Right Program Now</p><!-- текст під кнопкою з посиланням -->
+        
+        <section id="second-page"><!-- друга сторінка --><!-- тут ймовірно буде грид з 5-ти об'єктів -->
+            <div class="second-page_elements second-page_1">
+                <p id="second-page_1_1">Leadership With Logan: Why It Works </p> 
+                <p class="second-page_1_2">Ready to take your leadership to the next level?</p>
+                <p class="second-page_1_2"> Let’s Make it Happen!</p>
+                <p id="second-page_1_3"><button type="submit" class="submit">My program</button></p><!-- ПОКИ ЩО НЕ ЗНАЮ- КУДИ ВОНО ВІДПРАВЛЯЄ -->
+            </div>
+            <div class="second-page_elements second-page_2">
+                <p class="pics">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
+                <p class="second-page_name_for_2_3_4">Proven Expertise</p>
+                <hr class="second-page_hr">
+                <p class="second-page_text_for_2_3_4">With over a decade of experience coaching executives, entrepreneurs, and teams, I’ve helped leaders at all levels unlock their full potential and achieve breakthrough results.</p>
+            </div>
+            <div class="second-page_elements second-page_3">
+                <p class="pics">Icon</p> <!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
+                <p class="second-page_name_for_2_3_4">Tailored Leadership Strategies</p>                 
+                <hr class="second-page_hr">
+                <p class="second-page_text_for_2_3_4">I don’t believe in a one-size-fits-all approach. My coaching is personalized to your unique challenges, strengths, and goals, ensuring practical and sustainable growth.</p>
+            </div>
+            <div class="second-page_elements second-page_4">
+                <p class="pics">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
+                <p class="second-page_name_for_2_3_4">Real-World Impact</p>
+                <hr class="second-page_hr">
+                <p>My coaching goes beyond theory. I provide actionable strategies and mindset shifts that you can apply immediately to lead with confidence and inspire those around you.</p>
+            </div>
+            <div class="second-page_elements second-page_5">
+                <p class="icon">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
+                <p class="second-page_name_for_2_3_4">Trusted by Professionals</p>
+                <hr class="second-page_hr">
+                <p class="second-page_text_for_2_3_4">I’ve worked with Fortune 500 executives, high-performing teams, and emerging leaders worldwide, helping them navigate leadership challenges and create lasting success.</p>
+            </div>
         </section>
-        <section><!-- друга сторінка --><!-- тут ймовірно буде грид з 5-ти об'єктів -->
-            <p>Leadership With Logan: Why It Works Ready to take your leadership to the next level? Let’s Make it Happen!</p><p>My program</p>
-            <p>Icon</p><p>Proven Expertise</p><p>With over a decade of experience coaching executives, entrepreneurs, and teams, I’ve helped leaders at all levels unlock their full potential and achieve breakthrough results.</p>
-            <p>Icon</p><p>Tailored Leadership Strategies</p><p>I don’t believe in a one-size-fits-all approach. My coaching is personalized to your unique challenges, strengths, and goals, ensuring practical and sustainable growth.</p>
-            <p>Icon</p><p>Real-World Impact</p><p>My coaching goes beyond theory. I provide actionable strategies and mindset shifts that you can apply immediately to lead with confidence and inspire those around you.</p>
-            <p>Icon</p><p>Trusted by Professionals</p><p>I’ve worked with Fortune 500 executives, high-performing teams, and emerging leaders worldwide, helping them navigate leadership challenges and create lasting success.</p>
-        </section>
-        <section><!-- третя сторінка --><!-- тут ймовірно буде грид з 6-ти об'єктів -->
-            <p>Тут буде картинка</p>
-            <p>Leadership Coach, Speaker, and Mentor</p>
-            <hr>
-            <p>If you’re ready to elevate your leadership and take control of your future, let’s make it happen.</p>
-            <p>I believe that leadership isn’t just about titles—it’s about mindset, action, and the ability to inspire others. My coaching approach blends strategy, emotional intelligence, and real-world experience to help you lead with clarity and purpose.</p>
-            <p>See the Results in Action
 
-                Watch how my coaching transforms careers.</p> <!-- тут буде посилання на відео -->
+        <section id="third_page"><!-- третя сторінка --><!-- тут ймовірно буде грид з 6-ти об'єктів -->
+            <img src="img_png1.png" alt="men" id="men">
+            <div id="third_page_2">
+                <h2 id="third_page_2_1">Leadership Coach, <br>Speaker, and Mentor</h2>
+                <hr id="third_page_hr">
+                <p id="third_page_2_2">If you’re ready to elevate your leadership and take control of your future, let’s make it happen.</p>
+                <p id="third_page_2_3">I believe that leadership isn’t just about titles—it’s about mindset, action, and the ability to inspire others. My coaching approach blends strategy, emotional intelligence, and real-world experience to help you lead with clarity and purpose.</p>
+                <div id="third_page_2_4">
+                    <p id="third_page_2_4_1">ICon</p><!-- тут буде посилання на відео -->
+                    <article id="third_pade_2_4_2">
+                        <p id="third_pade_2_4_2_1">See the Results in Action </p>
+                        <p id="third_pade_2_4_2_2"> Watch how my coaching transforms careers.</p> 
+                     </article>  
+                </div>
+            </div>
         </section>
         <section><!-- четверта сторінка --><!-- тут ймовірно буде два флекса по 3 об'єскта -->
-            <div>
-                <p>01</p><p>Leadership Expert</p><p>Over 10 years of experience coaching executives and teams.</p>
-                <p>02</p><p>Personalized Approach</p><p>Tailored strategies to fit your unique leadership style.</p>
-                <p>03</p><p>Action-Driven Coaching</p><p>Practical tools you can apply immediately for real results.</p>
+            <div id="fourth_page">
+                <p class="big_number">01</p>
+                <article class="fourth_page_1_1">                  
+                     <p class="fourth_page_1_name">Leadership Expert</p>
+                     <p class="fourth_page_1_text">Over 10 years of experience coaching executives and teams.</p>
+                </article>
+                <p class="big_number">02</p>
+                <article class="fourth_page_1_1">                     
+                     <p class="fourth_page_1_name">Personalized Approach</p>
+                     <p class="fourth_page_1_text">Tailored strategies to fit your unique leadership style.</p>
+                </article>
+                <p class="big_number">03</p>
+                <article class="fourth_page_1_1">                     
+                     <p class="fourth_page_1_name">Action-Driven Coaching</p>
+                     <p class="fourth_page_1_text">Practical tools you can apply immediately for real results.</p>
+                </article>
             </div>
-            <div>
-                <p>Challenges:</p><!-- перший стовпчик -->
-                <hr>
-                <ul>
-                    <li>Lack of confidence in decision-making;</li>
-                    <li>Struggles with team management & communication.</li>
-                    <li>Difficulty maintaining work-life balance;</li>
-                    <li>Feeling stuck in career growth;</li>
-                </ul>
-                <p>Challenges:</p><!-- другий стовпчик -->
-                <hr>
-                <ul>
-                    <li>Gain clarity & confidence in your leadership;</li>
-                    <li>Develop strong communication & team management skills;</li>
-                    <li>Build a balanced, high-performance mindset;</li>
-                    <li>Create a clear path to success.</li>
-                </ul>
-                <p>Sign Up Now & Get a Bonus!</p><!-- третій стовпчик -->
-                <p>Enroll today and receive an exclusive leadership guide.</p>
-                <p><a href=""></a>Claim your offer</p>
+            <div id="fourth_page_sec">
+                <article id="fourth_page_2_1">
+                    <p id="fourth_page_2_1name">Challenges:</p><!-- перший стовпчик -->
+                    <hr id="fourth_page_2_1hr">
+                    <ul>
+                        <li class="li1">Lack of confidence in decision-making;</li>
+                        <li class="li1">Struggles with team management & communication.</li>
+                        <li class="li1">Difficulty maintaining work-life balance;</li>
+                        <li class="li1">Feeling stuck in career growth;</li>
+                    </ul>
+                </article>
+                <article id="fourth_page_2_2">
+                    <p id="fourth_page_2_2name">Solutions:</p><!-- другий стовпчик -->
+                    <hr id="fourth_page_2_2hr">
+                    <ul>
+                        <li class="li2">Gain clarity & confidence in your leadership;</li>
+                        <li class="li2">Develop strong communication & team management skills;</li>
+                        <li class="li2">Build a balanced, high-performance mindset;</li>
+                        <li class="li2">Create a clear path to success.</li>
+                    </ul>
+                </article>
+                <article  id="fourth_page_2_3">
+                    <p id="fourth_page_2_3name">Sign Up Now &<br>Get a Bonus!</p><!-- третій стовпчик -->
+                    <p id="fourth_page_2_3text">Enroll today and receive an exclusive leadership guide.</p>
+                    <p id="fourth_page_2_3button"><a href=""></a>Claim your offer</p>   <!-- тут треба зробити кнопку -->
+                </article>
+              
             </div>
         </section>
         <section><!-- п'ята сторінка --><!-- тут ймовірно буде  флекс або грід на 6 об'єсктів -->
