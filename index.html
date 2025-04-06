@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Coach Website Template Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <section id="first-page"><!-- перша сторінка --><!-- тут треба посилання на картинку фона -->
-            <header><!-- це  перший рядок --><!-- В МАЙБУТНЬОМУ ЦЕ БУДУТЬ КНОПКИ НАВЫГАЦІЇ -->
+        <section id="titile_header"><!-- перша частина (титульна сторінка)-->
+            <header><!-- це  перший рядок --><!-- В МАЙБУТНЬОМУ ЦЕ БУДУТЬ КНОПКИ НАВіГАЦІЇ -->
             <div id="header-left">  <!-- це  ліва половина --> 
                 <p><b>About me</b></p> 
                 <p><b>Chalenges</b></p>
@@ -16,344 +17,445 @@
                 <p><b>Programs</b></p>
                 <p><b>Events</b></p>
                 <p><b>News</b></p>         
-            </div>
-            <div id="header-right">  
-            <p>Facebook</p><!-- це  права половина (іконки соцмереж)--><!-- ДОДАТИ ПОСИЛАННЯ І ІКОНКИ-->
-            <p>Youtube</p>
-            <p>Instagram</p>
+            </div> 
+                <div id="header-right"> <!-- це права половина (посилання на соцмережі) --> 
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>       
             </div>
             </header>        
-            <h1>Lead Like a Pro <br>With Logan Pierce </h1>  <!-- основний заголовок -->
-            <h3> Join thousands of leaders who have unlocked their true <br>potential and achieved remarkable success.</h3><!-- підзаголовок -->
+            <h1 id="main_title">Lead Like a Pro <br>With Logan Pierce </h1>  <!-- основний заголовок -->
+            <h3 id="main_title_under"> Join thousands of leaders who have unlocked their true <br>potential and achieved remarkable success.</h3><!-- підзаголовок -->
             <form action="https://"><!-- тут буде треба адреса -->
-                <input type="text" name="course" placeholder="Email*" required class="input"><!--type="text" - висвітлює вікно для вводу тексту; placeholder="довільний текст" - надпис у вікні вводу; required - означає необхідність; ВСЕ ЦЕ РАЗОМ - СКЛАДОВІ ВІКНА ВВОДУ--> 
-                <button type="submit" class="submit">Get my free course</button><!--<button type="submit">Submit</button>- висвітлює кнопку 'Відправити'-->          
+                <input type="text" name="course" placeholder="      Email*" required id="main_title_input"><!--type="text" - висвітлює вікно для вводу тексту; placeholder="довільний текст" - надпис у вікні вводу; required - означає необхідність; ВСЕ ЦЕ РАЗОМ - СКЛАДОВІ ВІКНА ВВОДУ--> 
+                <button type="submit" id="main_title_submit">Get my free course</button><!--<button type="submit">Submit</button>- висвітлює кнопку 'Відправити'-->          
             </form>
-            <p id="form-first"><em><u>Sign up</u> now to receive your <strong> FREE</strong> mini-course on<strong> “Mastering Public Speaking”.</strong></em></p><!-- тут ще треба поділити по кольорам шрифту -->
-            <p id="link-program">Find the Right <a href="" class="link">Program</a> Now</p><!-- текст під кнопкою з посиланням -->
+            <p id="main_title_undersubmit"><em><u>Sign up</u> now to receive your <strong> FREE</strong> mini-course on<strong> “Mastering Public Speaking”.</strong></em></p><!-- тут ще треба поділити по кольорам шрифту -->
+            <p id="main_title_program">Find the Right <a href="" class="main_title_program_link">Program</a> Now</p><!-- текст під кнопкою з посиланням -->
         </section>
           
     <main>
         
-        <section id="second-page"><!-- друга сторінка --><!-- тут ймовірно буде грид з 5-ти об'єктів -->
-            <div class="second-page_elements second-page_1">
-                <p id="second-page_1_1">Leadership With Logan: Why It Works </p> 
-                <p class="second-page_1_2">Ready to take your leadership to the next level?</p>
-                <p class="second-page_1_2"> Let’s Make it Happen!</p>
-                <p id="second-page_1_3"><button type="submit" class="submit">My program</button></p><!-- ПОКИ ЩО НЕ ЗНАЮ- КУДИ ВОНО ВІДПРАВЛЯЄ -->
+        <section id="about_us"><!-- друга частина -->
+            <div class="about_us_elements about_us_first-element">
+                <p id="about_us_first-element_title">Leadership With Logan: Why It Works </p> 
+                <p class="about_us_first-element_under-title">Ready to take your leadership to the next level?</p>
+                <p class="about_us_first-element_under-title"> Let’s Make it Happen!</p>
+                <form action="https://"><!-- тут буде треба адреса -->
+                      <button type="submit" class="about_us_first-element_submit">My program</button></p><!-- ПОКИ ЩО НЕ ЗНАЮ- КУДИ ВОНО ВІДПРАВЛЯЄ -->
+                </form>
             </div>
-            <div class="second-page_elements second-page_2">
-                <p class="pics">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
-                <p class="second-page_name_for_2_3_4">Proven Expertise</p>
-                <hr class="second-page_hr">
-                <p class="second-page_text_for_2_3_4">With over a decade of experience coaching executives, entrepreneurs, and teams, I’ve helped leaders at all levels unlock their full potential and achieve breakthrough results.</p>
+            <div class="about_us_elements about_us_second-element">
+                <img src="./images/icon_hills.png" alt="icon_hills" class="about_us_icons">
+                <p class="about_us_elements_title">Proven Expertise</p>
+                <hr class="about_us_hr">
+                <p class="about_us_elements_text">With over a decade of experience coaching executives, entrepreneurs, and teams, I’ve helped leaders at all levels unlock their full potential and achieve breakthrough results.</p>
             </div>
-            <div class="second-page_elements second-page_3">
-                <p class="pics">Icon</p> <!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
-                <p class="second-page_name_for_2_3_4">Tailored Leadership Strategies</p>                 
-                <hr class="second-page_hr">
-                <p class="second-page_text_for_2_3_4">I don’t believe in a one-size-fits-all approach. My coaching is personalized to your unique challenges, strengths, and goals, ensuring practical and sustainable growth.</p>
+            <div class="about_us_elements about_us_third-element">
+                <img src="./images/icon_clouds.png" alt="icon_clouds" class="about_us_icons">
+                <p class="about_us_elements_title">Tailored Leadership Strategies</p>                 
+                <hr class="about_us_hr">
+                <p class="about_us_elements_text">I don’t believe in a one-size-fits-all approach. My coaching is personalized to your unique challenges, strengths, and goals, ensuring practical and sustainable growth.</p>
             </div>
-            <div class="second-page_elements second-page_4">
-                <p class="pics">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
-                <p class="second-page_name_for_2_3_4">Real-World Impact</p>
-                <hr class="second-page_hr">
-                <p>My coaching goes beyond theory. I provide actionable strategies and mindset shifts that you can apply immediately to lead with confidence and inspire those around you.</p>
+            <div class="about_us_elements about_us_fourth-element">
+                <img src="./images/icon_ladder.png" alt="icon_ladder" class="about_us_icons">
+                <p class="about_us_elements_title">Real-World Impact</p>
+                <hr class="about_us_hr">
+                <p class="about_us_elements_text">My coaching goes beyond theory. I provide actionable strategies and mindset shifts that you can apply immediately to lead with confidence and inspire those around you.</p>
             </div>
-            <div class="second-page_elements second-page_5">
-                <p class="icon">Icon</p><!-- ТУТ ТРЕБА ПЕРЕРОБТИ НА iMG -->
-                <p class="second-page_name_for_2_3_4">Trusted by Professionals</p>
-                <hr class="second-page_hr">
-                <p class="second-page_text_for_2_3_4">I’ve worked with Fortune 500 executives, high-performing teams, and emerging leaders worldwide, helping them navigate leadership challenges and create lasting success.</p>
+            <div class="about_us_elements about_us_fifh-element">
+                <img src="./images/icon_yey.png" alt="icon_yey" class="about_us_icons">
+                <p class="about_us_elements_title">Trusted by Professionals</p>
+                <hr class="about_us_hr">
+                <p class="about_us_elements_text">I’ve worked with Fortune 500 executives, high-performing teams, and emerging leaders worldwide, helping them navigate leadership challenges and create lasting success.</p>
             </div>
         </section>
 
-        <section id="third_page"><!-- третя сторінка --><!-- тут ймовірно буде грид з 6-ти об'єктів -->
-            <img src="img_png1.png" alt="men" id="men">
-            <div id="third_page_2">
-                <h2 id="third_page_2_1">Leadership Coach, <br>Speaker, and Mentor</h2>
-                <hr id="third_page_hr">
-                <p id="third_page_2_2">If you’re ready to elevate your leadership and take control of your future, let’s make it happen.</p>
-                <p id="third_page_2_3">I believe that leadership isn’t just about titles—it’s about mindset, action, and the ability to inspire others. My coaching approach blends strategy, emotional intelligence, and real-world experience to help you lead with clarity and purpose.</p>
-                <div id="third_page_2_4">
-                    <p id="third_page_2_4_1">ICon</p><!-- тут буде посилання на відео -->
+        <section id="about-leadership"><!-- третя частина -->
+            <img src="./images/img_png1.png" alt="men" id="about-leadership_men">
+            <div id="about-leadership_right-part">
+                <h2 id="about-leadership_right-part_title">Leadership Coach, <br>Speaker, and Mentor</h2>
+                <hr id="about-leadership_hr" align="left">
+                <p id="about-leadership_right-part_text-black">If you’re ready to elevate your leadership and take control of your future, let’s make it happen.</p>
+                <p id="about-leadership_right-part_text-grey">I believe that leadership isn’t just about titles—it’s about mindset, action, and the ability to inspire others. My coaching approach blends strategy, emotional intelligence, and real-world experience to help you lead with clarity and purpose.</p>
+                <div id="about-leadership_video">
+                    <img src="./images/icon_video.png" alt="icon_video" ><!-- тут буде посилання на відео -->
                     <article id="third_pade_2_4_2">
-                        <p id="third_pade_2_4_2_1">See the Results in Action </p>
-                        <p id="third_pade_2_4_2_2"> Watch how my coaching transforms careers.</p> 
+                        <p id="about-leadership_video-text1">See the Results in Action </p>
+                        <p id="about-leadership_video-text2"> Watch how my coaching transforms careers.</p> 
                      </article>  
                 </div>
             </div>
         </section>
-        <section><!-- четверта сторінка --><!-- тут ймовірно буде два флекса по 3 об'єскта -->
-            <div id="fourth_page">
-                <p class="big_number">01</p>
-                <article class="fourth_page_1_1">                  
-                     <p class="fourth_page_1_name">Leadership Expert</p>
-                     <p class="fourth_page_1_text">Over 10 years of experience coaching executives and teams.</p>
+        <section><!-- четверта частинка -->
+            <div id="advantage">
+                <p class="advantage_big-number">01</p>
+                <article class="advantage_right-part">                  
+                     <p class="advantage_right-part_title">Leadership Expert</p>
+                     <p class="advantage_right-part_text">Over 10 years of experience coaching executives and teams.</p>
                 </article>
-                <p class="big_number">02</p>
-                <article class="fourth_page_1_1">                     
-                     <p class="fourth_page_1_name">Personalized Approach</p>
-                     <p class="fourth_page_1_text">Tailored strategies to fit your unique leadership style.</p>
+                <p class="advantage_big-number">02</p>
+                <article class="advantage_right-part">                     
+                     <p class="advantage_right-part_title">Personalized Approach</p>
+                     <p class="advantage_right-part_text">Tailored strategies to fit your unique leadership style.</p>
                 </article>
-                <p class="big_number">03</p>
-                <article class="fourth_page_1_1">                     
-                     <p class="fourth_page_1_name">Action-Driven Coaching</p>
-                     <p class="fourth_page_1_text">Practical tools you can apply immediately for real results.</p>
+                <p class="advantage_big-number">03</p>
+                <article class="advantage_right-part">                     
+                     <p class="advantage_right-part_title">Action-Driven Coaching</p>
+                     <p class="advantage_right-part_text">Practical tools you can apply immediately for real results.</p>
                 </article>
             </div>
-            <div id="fourth_page_sec">
-                <article id="fourth_page_2_1">
-                    <p id="fourth_page_2_1name">Challenges:</p><!-- перший стовпчик -->
-                    <hr id="fourth_page_2_1hr">
-                    <ul>
-                        <li class="li1">Lack of confidence in decision-making;</li>
-                        <li class="li1">Struggles with team management & communication.</li>
-                        <li class="li1">Difficulty maintaining work-life balance;</li>
-                        <li class="li1">Feeling stuck in career growth;</li>
+            <div id="advantage-second-part">
+                <article id="advantage-second-part_first-column"><!-- перший стовпчик -->
+                    <p id="advantage-second-part_first-column_title">Challenges:</p>
+                    <hr class="advantage-second-part_hr">
+                    <ul id="advantage-second-part_first-column_ul">
+                        <li class="advantage-second-part_first-column_li">Lack of confidence in decision-making;</li>
+                        <li class="advantage-second-part_first-column_li">Struggles with team management & communication.</li>
+                        <li class="advantage-second-part_first-column_li">Difficulty maintaining work-life balance;</li>
+                        <li class="advantage-second-part_first-column_li">Feeling stuck in career growth;</li>
                     </ul>
                 </article>
-                <article id="fourth_page_2_2">
-                    <p id="fourth_page_2_2name">Solutions:</p><!-- другий стовпчик -->
-                    <hr id="fourth_page_2_2hr">
+                <article id="advantage-second-part_second-column">
+                    <p id="advantage-second-part_second-column_title">Solutions:</p><!-- другий стовпчик -->
+                    <hr class="advantage-second-part_hr">
                     <ul>
-                        <li class="li2">Gain clarity & confidence in your leadership;</li>
-                        <li class="li2">Develop strong communication & team management skills;</li>
-                        <li class="li2">Build a balanced, high-performance mindset;</li>
-                        <li class="li2">Create a clear path to success.</li>
+                        <li class="advantage-second-part_second-column_li">Gain clarity & confidence in your leadership;</li>
+                        <li class="advantage-second-part_second-column_li">Develop strong communication & team management skills;</li>
+                        <li class="advantage-second-part_second-column_li">Build a balanced, high-performance mindset;</li>
+                        <li class="advantage-second-part_second-column_li">Create a clear path to success.</li>
                     </ul>
                 </article>
-                <article  id="fourth_page_2_3">
-                    <p id="fourth_page_2_3name">Sign Up Now &<br>Get a Bonus!</p><!-- третій стовпчик -->
-                    <p id="fourth_page_2_3text">Enroll today and receive an exclusive leadership guide.</p>
-                    <p id="fourth_page_2_3button"><a href=""></a>Claim your offer</p>   <!-- тут треба зробити кнопку -->
-                </article>
-              
+                <div  id="advantage-second-part_third-column">
+                    <p id="advantage-second-part_third-column_title">Sign Up Now &<br>Get a Bonus!</p><!-- третій стовпчик -->
+                    <p id="advantage-second-part_third-column_3text">Enroll today and receive an exclusive leadership guide.</p>
+                    
+                    <form action="https://"><!-- тут буде треба адреса -->
+                        <button type="submit" class="advantage-second-part_third-column__submit">Claim your offer</button></p><!-- ПОКИ ЩО НЕ ЗНАЮ- КУДИ ВОНО ВІДПРАВЛЯЄ -->
+                  </form>
+                </div>
             </div>
         </section>
-        <section><!-- п'ята сторінка --><!-- тут ймовірно буде  флекс або грід на 6 об'єсктів -->
-            <div><!-- перший -->
-                <p>What My Clients Are Saying</p>
-                <hr>
-                <p>I’m proud to have helped so many leaders transform their careers. </p>
-            </div>
-            <div><!-- другий -->
-                <p>Pics</p>
-                <p>“A Game-Changer for My Career!”</p>
-                <p>“I gained the confidence I needed to lead my team effectively. Logan’s insights were invaluable.”</p>
-                <p>— Sarah Mitchell | March 2025</p>              
-            </div>
-            <div><!-- третій -->
-                тут буде картинка
-            </div><!-- четвертий -->
-                <p>Pics</p> 
-                <p>“Worth Every Penny”</p>
-                <p>“The leadership strategies I learned have helped me manage my team with clarity and confidence.”</p>
-                <p>— Dave Smith | January 2025</p>     
-            <div></div>
-            </div><!-- п'ятий -->
-                <p>Pics</p> 
-                <p>“I’ve Never Felt More Empowered”</p>
-                <p>“Logan’s coaching provided me with the tools to make better decisions and navigate challenges seamlessly.”</p>
-                <p>— Emily Harris | February 2025</p>     
-            <div></div>
-            </div><!-- шостий -->
-                <p>Pics</p> 
-                <p>“Highly Recommend to Any Leader!”</p>
-                <p>“Logan’s coaching helped me unlock my full leadership potential and gain the confidence to take on any challenge.”</p>
-                <p>— Michael Roberts | December 2024</p>     
-            <div></div>
-        </section>
-        <section><!-- шоста сторінка --><!-- тут ймовірно буде заголовок та грід на 4 об'єскти -->
-            <h2>Lead with Confidence & Clarit</h2>
-            <hr>
-            <h4>Choose a coaching program that fits your goals and take the next step.</h4>
-            <div><!-- перший -->
-                <ul>
-                    <li>4 weeks</li>
-                    <li>Foundations of Leadership</li>
-                    <li>Perfect for: New & aspiring leaders.</li>
-                    <li>icon
-                        4 one-on-one coaching sessions (45 min each);</li>
-                    <li>icon
-                        5 video lessons (total: 3 hours);</li>
-                    <li>icon
-                        Leadership mindset training.</li>
-                    <li>$499 → Now: $399</li>
-                </ul>
-                <p>посилання</p>
-            </div>
-            <P>Дві картинки</P><!-- другий -->
-            <P>Відео</P><!-- Третій -->
-            <div><!-- четвертий -->
-                <ul>
-                    <li>6 weeks</li>
-                    <li>Advanced Leadership Mastery</li>
-                    <li>Perfect for: Mid-level leaders ready to elevate their impact.</li>
-                    <li>icon
-                        6 one-on-one coaching sessions (60 min each);</li>
-                    <li>icon
-                        8 video lessons (total: 5 hours);</li>
-                    <li>icon
-                        Real-world leadership challenges & solutions.</li>
-                    <li>$799 → Now: $649</li>
-                </ul>
-                <p>посилання</p>
-            </div>
-        </section>
-        <section><!-- Сьома сторінка --><!-- Дуже складний грід!!!! Поки не знаю як групувати-->
-            <div><!-- це буде перший -->
-                <p>Bonus Mini-Course: Public Speaking</p>
-                <p>In just 4 lessons, you’ll gain valuable speaking skills that will elevate your leadership presence.</p>
-                <p>To receive the free mini-course, subscribe to our newsletter and get instant access to all lessons and valuable resources straight to your inbox!</p>
-            </div>
 
+        <section><!-- п'ята частинка -->      
             <div>
-            <p>Course Details:</p><!-- це буде другий -->
-            <ul>
-                <li>Lesson 1: Overcoming Fear: Techniques to Calm Your Nerves;</li>
-                <li>Lesson 2: Structuring Your Speech: Creating a Powerful Message;</li>
-                <li>Lesson 3: Body Language & Presence: Engaging with Confidence;</li>
-                <li>Lesson 3: Body Language & Presence: Engaging with Confidence;</li>
-            </ul>
-            <p>тут буде поле вводу</p><p>тут буде кнопка</p>
+                <h2 class="under_title">What My Clients Are Saying</h2><!-- підзаголовок -->
+                <hr class="hr_main">
+                <p class="under_tittle_sentence">I’m proud to have helped so many leaders transform their careers. </p>
             </div>
 
-            <div><!-- це буде третій -->
-                <p> Sneak Peek: Mastering Public Speaking</p>
-                <p>Get a glimpse of the Free Mini-Course in action!</p>
-                <p>кнопка відео</p>
-                <p>Watch Now</p>
+            <div class="review_first_grid">
+                <div id="review_first_grid_1st_obj"><!-- перший -->
+                    <img src="./images/Sarah_Mitchell.png" alt="Sarah_Mitchell">
+                    <h3 class="first_sentence_review">“A Game-Changer for My Career!”</h3>
+                    <blockquote class="review_main">“I gained the confidence I needed to lead my team effectively. Logan’s insights were invaluable.”</blockquote>
+                    <p  class="review_name_data">— Sarah Mitchell | March 2025</p>              
+                </div>
+                <img src="./images/symvols.png" alt="symvols"><!-- другий -->
+                <div id="review_first_grid_3ird_obj"><!-- третій -->
+                    <img src="./images/Dave_Smith.png" alt="Dave Smith"> 
+                    <h3 class="first_sentence_review">“Worth Every Penny”</h3>
+                    <blockquote class="review_main">“The leadership strategies I learned have helped me manage my team with clarity and confidence.”</blockquote>
+                    <p  class="review_name_data">— Dave Smith | January 2025</p>     
+                </div>
+            </div>    
+            <div  class="review_second_grid">
+                <div class="review_second_grid_1_and_2nd_obj"><!-- четвертий -->
+                    <img src="./images/Emily_Harrys.png" alt="Emily Harris">
+                    <h3 class="first_sentence_review">““I’ve Never Felt More Empowered”</h3>
+                    <blockquote class="review_main">“Logan’s coaching provided me with the tools to make better decisions and navigate challenges seamlessly.”</blockquote>
+                    <p class="review_name_data">— Emily Harris | February 2025</p>     
+                </div>
+                <div class="review_second_grid_1_and_2nd_obj"><!-- п1ятий -->
+                    <img src="./images/Michael_Roberts.png" alt="Michael Roberts"> 
+                    <h3 class="first_sentence_review">“Highly Recommend to Any Leader!”</h3>
+                    <blockquote class="review_main">“Logan’s coaching helped me unlock my full leadership potential and gain the confidence to take on any challenge.”</blockquote>
+                    <p class="review_name_data">— Michael Roberts | December 2024</p>     
+                </div>
             </div>
-            <div><!-- це буде четвертий -->
-                <p>10K+</p><hr><p>Leaders Transformed</p>
-                <p>485</p><hr><p>Public Speaking Successes</p>
-                <p>30+</p><hr><p>Countries Global Reach</p>
-                <p>98%</p><hr><p>Client Satisfaction</p>
+        </section>
+
+        <section><!-- шоста частинка -->
+            
+            <h2  class="under_title">Lead with Confidence & Clarit</h2><!-- підзаголовок -->
+            <hr class="hr_main">
+            <p class="under_tittle_sentence">Choose a coaching program that fits your goals and take the next step.</p>
+           
+           <div id="coach_program_grid">
+                <div class="coach_program_text"><!-- перший -->
+                    <p class="coach_program_weeks">4 weeks</p>
+                    <p class="coach_program_title">Foundations of Leadership</p>
+                    <article class="coach_program_proposition"><p class="coach_program_perfect_for">Perfect for: </p><p class="coach_program_proposition_text">New & aspiring leaders.</p></article>
+                    <div class="coach_program_proposition"><img src="./images/rocket.png" alt="rocket" class="program_img"><p class="coach_program_proposition_text">4 one-on-one coaching sessions (45 min each);</p></div>
+                    <div class="coach_program_proposition"><img src="./images/arch.png" alt="arch" class="program_img"><p class="coach_program_proposition_text">5 video lessons (total: 3 hours);</p></div>
+                    <div class="coach_program_proposition"><img src="./images/present.png" alt="present" class="program_img"><p class="coach_program_proposition_text">Leadership mindset training.</p></div>
+                    <article class="coach_program_proposition"><p class="price_old">$499</p><p class="move"> →</p><p class="word_now">Now:</p><p class="new_price">$399</p></article>
+                    <form action="https://"><!-- тут буде треба адреса -->
+                         <button type="submit" class="coach_program_submit">Get started now</button>   
+                    </form>
+
+                </div>
+                <div class="coach_program_video"><!-- другий -->
+                    <iframe  src="https://www.youtube.com/embed/qzoIAJYPQwo?si=lFgLADN_a2L7b7Su" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="coach_program_video_size"></iframe>
+                </div>
+                <div class="coach_program_video second_vid"><!-- третій -->
+                    <iframe  src="https://www.youtube.com/embed/dIYmzf21d1g?si=ZHboqGOrT8jwP8k_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="coach_program_video_size"></iframe>
+                </div>
+
+                <div class="coach_program_text"><!-- четвертий -->
+                    <p  class="coach_program_weeks">6 weeks</p>
+                    <p class="coach_program_title">Advanced Leadership Mastery</p>
+                    <article class="coach_program_proposition"><p class="coach_program_perfect_for">Perfect for:</p><p class="coach_program_proposition_text"> Mid-level leaders ready to elevate their impact.</p></article>
+                    <div class="coach_program_proposition"><img src="./images/rocket.png" alt="rocket" class="program_img"><p class="coach_program_proposition_text">6 one-on-one coaching sessions (60 min each);</p></div>
+                    <div class="coach_program_proposition"><img src="./images/arch.png" alt="arch" class="program_img"><p class="coach_program_proposition_text">8 video lessons (total: 5 hours);</p></div>
+                    <div class="coach_program_proposition"><img src="./images/present.png" alt="present" class="program_img"><p class="coach_program_proposition_text">Real-world leadership challenges & solutions.</p></div>
+                    <article class="coach_program_proposition"><p class="price_old">$799</p><p class="move"> →</p><p class="word_now"> Now:</p><p class="new_price">$649</p></article>
+                    <form action="https://"><!-- тут буде треба адреса -->
+                        <button type="submit" class="coach_program_submit">Get started now</button>   
+                   </form>
+                </div>
             </div>
-        <section><!-- Восьма сторінка --><!-- тут буде суто відео-->
-                <p>відос</p>
+
+        </section>
+        <section id="bonus_course"><!-- Сьома частинка -->
+            <div id="bonus_course_structure">
+                <div><!-- це буде перший -->
+                    <article id="bonus_course_undertitle"><p id="word_bonus">Bonus </p><p id="bonus_course_undertitle_text">Mini-Course: Public Speaking</p></article>
+                    <p id="bonus_course_structure_text">In just 4 lessons, you’ll gain valuable speaking skills that will elevate your leadership presence.</p>
+                    <p id="bonus_course_structure_text2">To receive the <strong>free</strong> <em>mini-course</em>, subscribe to our newsletter and get instant access to all lessons and valuable resources straight to your inbox!</p>
+                </div>
+                <div>
+                    <p id="words_course_details">Course Details:</p><!-- це буде другий -->
+                        <ul>
+                            <li class="bonus_course_structure_row"><span class="liggt_blue">Lesson 1:</span> Overcoming Fear: Techniques to Calm Your Nerves;</li>
+                            <li  class="bonus_course_structure_row"><span class="liggt_blue">Lesson 2:</span> Structuring Your Speech: Creating a Powerful Message;</li>
+                            <li class="bonus_course_structure_row"><span class="liggt_blue">Lesson 3:</span> Body Language & Presence: Engaging with Confidence;</li>
+                            <li class="bonus_course_structure_row"><span class="liggt_blue">Lesson 3:</span> Body Language & Presence: Engaging with Confidence;</li>
+                        </ul>
+                        <form action="https://"><!-- тут буде треба адреса -->
+                            <input type="text" name="course" placeholder="      Email*" required class="input bonus_course_input"><!--type="text" - висвітлює вікно для вводу тексту; placeholder="довільний текст" - надпис у вікні вводу; required - означає необхідність; ВСЕ ЦЕ РАЗОМ - СКЛАДОВІ ВІКНА ВВОДУ--> 
+                            <button type="submit" class="submit bonus_course_submit ">Subscribe</button><!--<button type="submit">Submit</button>- висвітлює кнопку 'Відправити'-->          
+                        </form>
+                </div>
+            </div>
+
+            <div id="sneak_peek"><!-- це буде третій -->
+                <div id="sneak_peek_left_part">
+                    <p id="sneak_peek_undertitle"> Sneak Peek: Mastering Public Speaking</p>
+                    <p id="sneak_peek_text">Get a glimpse of the Free Mini-Course in action!</p>
+                    <div id="sneak_peek_left_part_bottom">
+                        <img src="./images/button_video.png" alt="button_video">
+                        <article id="sneak_peek_left_part_bottom_right" >
+                            <p id="sneak_peek_left_part_bottom_right_1">Episode 1:</p>
+                            <p id="sneak_peek_left_part_bottom_right_2">The Power of Confidence on Stage</p>
+                            <p id="sneak_peek_left_part_bottom_right_3">Watch Now</p>
+                        </article>
+                    </div>
+
+                </div>
+                <img src="./images/man_with_laptop.png" alt="man_with_laptop">
+            </div>
+            <div id="quantity"><!-- це буде четвертий -->
+                <div class="quantity_element">
+                    <p class="quantity_element_row">10K<span class="plus">+</span></p>
+                    <hr class="hr_main quantity_hr" align="left">
+                    <p class="quantity_element_bottom">Leaders Transformed</p>
+                </div>
+                <div class="quantity_element">
+                    <p class="quantity_element_row">485</p>
+                    <hr class="hr_main quantity_hr" align="left">
+                    <p class="quantity_element_bottom">Public Speaking Successes</p>
+                </div>
+                <div class="quantity_element">
+                    <p class="quantity_element_row">30<span class="plus">+</span></p>
+                    <hr class="hr_main quantity_hr" align="left">
+                    <p class="quantity_element_bottom">Countries Global Reach</p>
+                </div>
+                <div class="quantity_element">
+                    <p class="quantity_element_row">98%</p>
+                    <hr class="hr_main quantity_hr" align="left">
+                    <p class="quantity_element_bottom">Client Satisfaction</p>
+                </div>
+            </div>
+        </section>
+        <section><!-- Восьма частинка --><!-- тут буде суто відео-->
+            <iframe id="big_video" src="https://www.youtube.com/embed/eIho2S0ZahI?si=FCHKe3WjraSSwrNX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
          </section>
-         <section><!-- дев'ята сторінка --><!-- тут буде складна таблиця-->
-                <h2>Upcoming Events & Workshops</h2><!-- це буде заголовок-->
-                <hr>
-                <p>Join exclusive live events designed to elevate your leadership skills and expand your network.</p>
+         <section><!-- дев'ята частинка -->    
+            <h2  class="under_title">Upcoming Events & Workshops</h2><!-- підзаголовок-->
+            <hr class="hr_main">
+            <p  class="under_tittle_sentence">Join exclusive live events designed to elevate your leadership skills and expand your network.</p>
+           
+            <table>
+                <tr>
+                    <th>
+                        <div class="table_row">
+                            <div class="table_1st_column">
+                                <p ><span class="table_price">$1,200</span> (Early Bird: $950)</p>
+                                <p>Location:<span class="noweight"> New York, USA</span></p>
+                                <p>June 15-16, 2025</p>
+                            </div>
+                            <div  class="table_2nd_column">
+                                <p class="word_offline">Offline</p>
+                                <p class="table_name_course">Executive Leadership Summit</p>
+                                <p class="table_2nd_column_end">A two-day summit featuring expert speakers, high-impact networking, and advanced leadership training.</p>
+                            </div>
+                                   
+                            <button type="submit" class="submit table_submit">By a ticket</button>  
+                                         
+                        </div>
+                      </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="table_row"><!-- це все буде другий рядок-->
+                            <div class="table_1st_column">
+                                <p><span class="table_price">$2,500</span></p>
+                                <p>Location: <span class="noweight">Lake Tahoe, USA</span></p>
+                                <p>September 5-8, 2025</p>
+                            </div>
+                            <div  class="table_2nd_column">
+                                <p class="word_offline">Offline</p>
+                                <p class="table_name_course">Retreat: Unlock Your Potential</p>
+                                <p class="table_2nd_column_end">A 4-day immersive retreat with coaching, mindset training and strategic leadership development.</p>
+                            </div>                     
+                                  
+                            <button type="submit" class="submit table_submit">By a ticket</button>  
+                             
+                        </div>  
+                    </tr>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="table_row"><!-- це все буде третій рядок-->
+                            <div class="table_1st_column">
+                                <p><span class="table_price">$450</span></p>
+                                <p>Location:<span class="noweight"> Private Platform</span></p>
+                                <p>May 10-11, 2025</p>
+                            </div>
+                            <div  class="table_2nd_column">
+                                <p class="word_offline">Offline</p>
+                                <p class="table_name_course">Leading with Emotional Intelligence</p>
+                                <p class="table_2nd_column_end">A 2-day workshop on emotional intelligence for stronger leadership and better decision-making.</p>
+                            </div>
 
-                <div><!-- це все буде перший рядок-->
-                    <p>$1,200 (Early Bird: $950)</p>
-                    <p>Location: New York, USA</p>
-                    <p>June 15-16, 2025</p>
-                    <p>Offline</p>
-                    <p>Executive Leadership Summit</p>
-                    <p>A two-day summit featuring expert speakers, high-impact networking, and advanced leadership training.</p>
-                    <p>Кнопка</p>                 
-                </div>
+                            <button type="submit" class="table_submit">By a ticket</button>                                  
+                        </div>
+                    </th>     
+                </tr>
 
-                <div><!-- це все буде другий рядок-->
-                    <p>$2,500</p>
-                    <p>Location: Lake Tahoe, USA</p>
-                    <p>September 5-8, 2025</p>
-                    <p>Offline</p>
-                    <p>Retreat: Unlock Your Potential</p>
-                    <p>A 4-day immersive retreat with coaching, mindset training and strategic leadership development.</p>
-                    <p>Кнопка</p>                 
+            </table>
+        </section>
+        <section id="main_manager"><!-- деcята частинка -->
+            <img src="./images/very_nice_women.png" alt="very_nice_women">
+            <div id="speach_main_manager">
+                <h2 id="name_main_manager">Emily Roberts<span id="name">, Senior Manager</span></h2>
+                <hr class="hr_main" align="left">
+                <p id="main_manager_time">5+ Years in Leadership | January 2025</p>
+                <blockquote id="main_manager_text">“The ‘Executive Leadership Mastery’ course completely transformed my approach to leadership. Thanks to Logan’s guidance, I gained more confidence in making decisions and leading my team. Within weeks, I was already seeing positive changes, including a promotion!”</blockquote>
+                <ul id="main_manager_skills">
+                    <li class="main_manager_skills_row"><span class="skills">Boosted Confidence:</span><br>Gained the courage to make tough decisions.</li>
+                    <li class="main_manager_skills_row"><span class="skills">Stronger Team Leadership:</span><br>Improved communication and team collaboration.</li>
+                    <li class="main_manager_skills_row"><span class="skills">Promotion:</span><br>Secured a higher role after completing the course.</li>
+                </ul>
+            </div>
+        </section>      
+        <section id="transform"><!-- одинадцята частинка -->
+            <h2 id="transform_title">Transform Your Leadership Today!</h2><!-- Підзаголовок -->
+            <hr class="hr_main">
+            <p id="transform_text">Don’t wait to take your leadership skills to the next level. Start your journey with <br> tailored coaching and unlock your full potential.</p>
+            <p id="transform_text_under">Sign Up Now & Get Started!</p>
+            
+            <form action="https://" id="transform_form">
+                <button type="submit" class="transform_submit1">Sign up now</button>  
+                <button type="submit" class="transform_submit">By a ticket</button>  
+            </form>    
+        </section>
+            
+        <section><!-- дванадцята частинка (остання)-->
+            <h2  class="under_title">Latest News & Articles!</h2><!-- Підзаголовок -->
+            <hr class="hr_main">
+            <p class="under_tittle_sentence">Stay informed and never miss an opportunity to grow.</p>   
+            
+            <div id="last_part">
+                <div><!-- перший стовпчик-->
+                    <img src="./images/business_meet1.png" alt="business_meet" class="last_part_img">
+                    <p class="last_part_data">February 20, 2025</p>
+                    <p class="last_part_undertitle">Logan Pierce Launches Exclusive Coaching Program</p>
+                    <p class="last_part_text">The new program promises personalized coaching to elevate leadership capabilities for senior professionals...</p>
+                    <form action="https://">
+                        <button type="submit" class="transform_submit1">Read more</button>   
+                    </form>    
                 </div>
-
-                <div><!-- це все буде третій рядок-->
-                    <p>$450</p>
-                    <p>Location: Private Platform</p>
-                    <p>May 10-11, 2025</p>
-                    <p>Offline</p>
-                    <p>Leading with Emotional Intelligence</p>
-                    <p>A 2-day workshop on emotional intelligence for stronger leadership and better decision-making.</p>
-                    <p>Кнопка</p>                 
+                <div><!-- другий стовпчик-->
+                    <img src="./images/business_meet2.png" alt="business_meet" class="last_part_img">
+                    <p class="last_part_data">March 12, 2025</p>
+                    <p class="last_part_undertitle">New Leadership Workshop Announced for 2025</p>
+                    <p class="last_part_text">TA new workshop designed to help professionals develop essential leadership skills will be held this summer...</p>
+                    <form action="https://">
+                        <button type="submit" class="transform_submit1">Read more</button>   
+                    </form> 
                 </div>
-        </section>
-        <section><!-- деcята сторінка --><!-- тут буде грід-->
-            <p> картинка</p>
-            <h2>Emily Roberts, Senior Manager</h2>
-            <hr>
-            <p>+ Years in Leadership | January 2025</p>
-            <p>“The ‘Executive Leadership Mastery’ course completely transformed my approach to leadership. Thanks to Logan’s guidance, I gained more confidence in making decisions and leading my team. Within weeks, I was already seeing positive changes, including a promotion!”</p>
-            <ul>
-                <li>Boosted Confidence:
-                    Gained the courage to make tough decisions.</li>
-                <li>Stronger Team Leadership:
-                    Improved communication and team collaboration.</li>
-                <li>Promotion:
-                    Secured a higher role after completing the course.</li>
-            </ul>
-        </section>
-        <section><!-- одинадцята сторінка --><!-- тут буде декілька рядків-->
-            <p>Transform Your Leadership Today!</p>
-            <hr>
-            <p>Don’t wait to take your leadership skills to the next level. Start your journey with tailored coaching and unlock your full potential.</p>
-            <p>Sign Up Now & Get Started!</p>
-            <p>поле вводу</p><p>кнопка</p>     
-        </section>
-        <section><!-- дванадцята сторінка (остання)--><!-- тут буде грід-->
-            <div><!-- тут буде заголовок-->
-                <h3>Latest News & Articles</h3>
-                <hr>
-                <p>Stay informed and never miss an opportunity to grow.</p>
-            </div>
-            <div><!-- перший стовпчик-->
-                <p>картинка</p>
-                <p>February 20, 2025</p>
-                <p>Logan Pierce Launches Exclusive Coaching Program</p>
-                <p>The new program promises personalized coaching to elevate leadership capabilities for senior professionals...</p>
-                <p>Кнопка</p>
-            </div>
-            <div><!-- другий стовпчик-->
-                <p>картинка</p>
-                <p>March 12, 2025</p>
-                <p>New Leadership Workshop Announced for 2025</p>
-                <p>TA new workshop designed to help professionals develop essential leadership skills will be held this summer...</p>
-                <p>Кнопка</p>
-            </div>
-            <div><!-- третій стовпчик-->
-                <p>картинка</p>
-                <p>March 8, 2025</p>
-                <p>Leadership Trends and Insights</p>
-                <p>Explore the latest trends and innovations in the world of leadership. From new strategies to emerging tools, we’re here to keep...</p>
-                <p>Кнопка</p>
+                <div><!-- третій стовпчик-->
+                    <img src="./images/business_meet3.png" alt="business_meet" class="last_part_img">
+                    <p class="last_part_data">March 8, 2025</p>
+                    <p class="last_part_undertitle">Leadership Trends and Insights</p>
+                    <p class="last_part_text">Explore the latest trends and innovations in the world of leadership. From new strategies to emerging tools, we’re here to keep...</p>
+                    <form action="https://">
+                        <button type="submit" class="transform_submit1">Read more</button>   
+                    </form> 
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <p>Take the Next Step in Your Leadership Journey Today!</p>
-            <hr>
-            <p>Together, we’ll unlock your full potential and guide you toward success.</p>
-        </div>
-        <div>
-            <P>поле вводу</P>
-            <P>поле вводу</P>
-            <P>поле вводу</P>
-            <P>кнопка</P>
-        </div>
-        <div>
-            <p>icon</p>
-            <p>icon</p>
-            <p>phone
+    <footer id="footer">
+        <div id="footer_grid">
+            <div>
+                <p id="footer_title">Take the Next Step in Your <br> Leadership Journey Today!</p>
+                <hr class="hr_main" align="left">
+                <p  id="footer_text">Together, we’ll unlock your full potential and guide you toward success.</p>
+          
+                <form action="https://"><!-- тут буде треба адреса -->
+                    <input type="text" name="course" placeholder="       Your Name*" required  class="footer_input"><!--type="text" - висвітлює вікно для вводу тексту; placeholder="довільний текст" - надпис у вікні вводу; required - означає необхідність; ВСЕ ЦЕ РАЗОМ - СКЛАДОВІ ВІКНА ВВОДУ--> 
+                    <input type="text" name="course" placeholder="       Email*" required  class="footer_input">
+                    <input type="text" name="course" placeholder="       Preferred Pro...*" required class="footer_input">
+                    <button type="submit" class="footer_submit">Submit</button><!--<button type="submit">Submit</button>- висвітлює кнопку 'Відправити'-->          
+                </form>
+            </div>
+            <div id="footer_contacts">
 
-                +1 (234) 567 89 00
-                +1 (234) 567 89 01</p>
-            <p>email
-
-                logan.pierce@email.com
-                help.pierce@email.com</p>
+                <div class="footer_contacts_phone_email">
+                    <img src="./images/icon_phone.png" alt="icon_phone" class="footer_img">
+               
+                    <article class="footer_contacts_phone_email_text">
+                        <p class="footer_contacts_phone_text_words_phone_email_number">phone</p>
+                        <p class="footer_contacts_phone_text__numbers_emails">+1 (234) 567 89 00</p>
+                        <p class="footer_contacts_phone_text_numbers_emails">+1 (234) 567 89 01</p> 
+                    </article>
+                </div>
+                <div class="footer_contacts_phone_email">
+                    <img src="./images/icon_letterr.png" alt="icon_letter" class="footer_img">
+               
+                    <article class="footer_contacts_phone_email_text">   
+                        <p class="footer_contacts_phone_text_words_phone_email_number">email</p>
+                        <p class="footer_contacts_phone_text__numbers_emails">logan.pierce@email.com</p>
+                        <p class="footer_contacts_phone_text__numbers_emails"> help.pierce@email.com</p>
+                    </article>
+               </div>
+            </div>
         </div>
-        <div>
-            <p>About Me</p>
-            <p>Features</p>
-            <p>Challenges</p>
-            <p>Testimonials</p>
-            <p>Programs</p>
-            <p>Bonus</p>
-            <p>Events</p>
-            <p>News</p>
-
+        <hr id="footer_hr">
+        <div id="footer_last_low">
+            <div id="footer_last_low_left">
+                <p class="footer_last_low_left_element">About Me</p>
+                <p class="footer_last_low_left_element">Features</p>
+                <p class="footer_last_low_left_element">Challenges</p>
+                <p class="footer_last_low_left_element">Testimonials</p>
+                <p class="footer_last_low_left_element">Programs</p>
+                <p class="footer_last_low_left_element">Bonus</p>
+                <p class="footer_last_low_left_element">Events</p>
+                <p class="footer_last_low_left_element">News</p>
+            </div>
             <p>© Created by | All rights Reserved</p>
         </div>
     </footer>    
